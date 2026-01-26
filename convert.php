@@ -103,6 +103,7 @@ if (file_exists($sourceProfile)) {
 // METİNLER
 $ad      = "Can Örge";
 $unvan   = "Yazılım Stajyeri";
+$unvanEng= "Software Intern";
 $telefon = "0555 123 45 67";
 $mail    = "can@firma.com";
 
@@ -122,6 +123,7 @@ $mailY  = 284;
 // YAZDIR (İSİM EKSTRA KALIN DURSUN DİYE FONT2)
 imagettftext($image, 26, 0, $nameX,  $nameY,  $white, $font2, $ad);
 imagettftext($image, 18, 0, $titleX, $titleY, $white, $font,  $unvan);
+imagettftext($image, 18, 0, $titleX, $titleY + 30, $white, $font,  $unvanEng);
 imagettftext($image, 16, 0, $telX,   $telY,   $white, $font,  $telefon);
 imagettftext($image, 16, 0, $mailX,  $mailY,  $white, $font,  $mail);
 
